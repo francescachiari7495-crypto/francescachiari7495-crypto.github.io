@@ -243,6 +243,16 @@ button{cursor:pointer;font-family:"Jost",sans-serif}
 </head>
 <body>
 
+<!-- Netlify form detection — do not remove -->
+<form name="contact" netlify netlify-honeypot="bot-field" hidden>
+  <input type="text" name="name">
+  <input type="text" name="organisation">
+  <input type="email" name="email">
+  <textarea name="message"></textarea>
+  <input name="bot-field">
+</form>
+
+
 <div class="lang-bar">
   <button class="lang-btn active" data-lang="it" onclick="setLang('it')">IT</button>
   <span class="lang-sep">|</span>
